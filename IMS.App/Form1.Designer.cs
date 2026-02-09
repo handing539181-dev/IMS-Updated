@@ -39,6 +39,7 @@
             label4 = new Label();
             buttonSave = new Button();
             buttonDelete = new Button();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             dataGridView1.Location = new Point(866, 65);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 123;
-            dataGridView1.Size = new Size(1242, 1110);
+            dataGridView1.Size = new Size(1242, 916);
             dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -136,12 +137,22 @@
             buttonDelete.UseVisualStyleBackColor = true;
             buttonDelete.Click += buttonDelete_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(1674, 1006);
+            label5.Name = "label5";
+            label5.Size = new Size(95, 48);
+            label5.TabIndex = 11;
+            label5.Text = "Total";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(2168, 1245);
+            Controls.Add(label5);
             Controls.Add(buttonDelete);
             Controls.Add(buttonSave);
             Controls.Add(textBoxDescription);
@@ -173,5 +184,6 @@
         private Label label4;
         private Button buttonSave;
         private Button buttonDelete;
+        private Label label5;
     }
 }

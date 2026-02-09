@@ -27,11 +27,17 @@ namespace IMS.App
                                         p.Name.ToLower().Contains(searchTerm) ||
                                         p.Description.ToLower().Contains(searchTerm))
                             .ToList();
+
+
+                    label5.Text = $"Total Programs: {_context.Programs.ToList().Count()}";
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}");
+            }
+            finally
+            {
             }
         }
 

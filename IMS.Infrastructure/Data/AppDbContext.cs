@@ -17,6 +17,7 @@ namespace IMS.Infrastructure.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AppDb;Integrated Security=True;TrustServerCertificate=True;");
+            //optionsBuilder.UseSqlite("Data Source=AppDb.db");
         }
 
         public DbSet<Programs> Programs { get; set; }
